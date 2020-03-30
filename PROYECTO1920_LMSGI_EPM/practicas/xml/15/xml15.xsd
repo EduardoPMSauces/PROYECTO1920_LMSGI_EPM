@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="registro">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="datoPersonal">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string"/>
+							<xs:element name="apellido" type="xs:string"/>
+							<xs:element name="fechanac" type="xs:string"/>
+							<xs:element name="sexo" type="xs:string"/>
+							<xs:element name="direccion" type="xs:string"/>
+							<xs:element name="ciudad" type="xs:string"/>
+							<xs:element name="provincia" type="xs:string"/>
+							<xs:element name="codigoPostal" type="xs:string"/>
+							<xs:element name="telefono" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="datosCuenta">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="correo" type="xs:string"/>
+							<xs:element name="usuario" type="xs:string"/>
+							<xs:element name="contrasenya" type="xs:string"/>
+							<xs:element name="preguntaSecreta" type="xs:string"/>
+							<xs:element name="colorPerfil" type="xs:string"/>
+							<xs:element name="foto" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="otroDato">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="conocer" type="xs:string"/>
+							<xs:element name="observacion" type="xs:string"/>
+							<xs:element name="valorar" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

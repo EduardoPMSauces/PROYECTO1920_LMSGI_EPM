@@ -1,0 +1,11 @@
+/* 
+    Created on : 
+    Author     : 
+    File        : estilo1.css
+    Description : Trabajando con selectores
+*/
+
+
+p {background-color:#ddd;}
+div a {background-color:#009cde; color:#fff;  text-decoration:none; }
+.hijo{ border:1px solid red;}

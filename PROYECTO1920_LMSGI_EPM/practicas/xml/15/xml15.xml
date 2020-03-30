@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<registro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xml15.xsd">
+	<datoPersonal>
+		<nombre></nombre>
+		<apellido></apellido>
+		<fechanac></fechanac>
+		<sexo></sexo>
+		<direccion></direccion>
+		<ciudad></ciudad>
+		<provincia></provincia>
+		<codigoPostal></codigoPostal>
+		<telefono></telefono>
+	</datoPersonal>
+	<datosCuenta>
+		<correo></correo>
+		<usuario></usuario>
+		<contrasenya></contrasenya>
+		<preguntaSecreta></preguntaSecreta>
+		<colorPerfil></colorPerfil>
+		<foto></foto>
+	</datosCuenta>
+	<otroDato>
+		<conocer></conocer>
+		<observacion></observacion>
+		<valorar></valorar>
+	</otroDato>
+</registro>

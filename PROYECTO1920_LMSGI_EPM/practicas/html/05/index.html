@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML 05 Eduardo Jose Pereira Machado</title>
+	</head>	
+	<body>
+	<h1>Registro página web</h1>
+	<form action="#" method="post">
+	<fieldset>
+		<legend>Datos Personales</legend>
+			<p> 
+				<label for="LblNombre">Nombre:</label>
+				<input type="text" name="nombre"  id="LblNombre" required  placeholder="Introduzca tu nombre">
+				</p>
+			
+			<p> 
+				<label for="LblApellidos">Apellidos:</label>
+				<input type="text" name="apellidos" size="40" id="LblApellidos" required placeholder="Introduzca tus apellidos">
+				</p>
+			<p>
+				<label for="LblFecha">Fecha de nacimiento:</label>
+				<input type="date" name="fecha" id="LblFecha" min="1900-01-01"  max="2001-12-30" required>
+				</p>
+			<p>
+				<label for="LblHombre">Sexo:</label>
+				<input type="radio" name="hombre" value="hombre" id="LblHombre"> Hombre
+					
+				<label for="LblMujer"></label>
+				<input type="radio" name="mujer" value="mujer" id="LblMujer"> Mujer
+					
+				</p>
+				
+			<p> 
+				<label for="LblDireccion">Dirección:</label>
+				<input type="text" name="direccion" size="40" id="LblDireccion" placeholder="Introduzca tu dirección" required >
+				</p>
+			
+			<p> 
+				<label for="LblCiudad">Ciudad:</label>
+				<input type="text" name="ciudad" size="20" id="LblCiudad" placeholder="Introduzca tu Ciudad" required >
+				</p>
+			<p>
+				<label for="LblProvincia">Provincia:
+				<select id="LblProvincia">
+					<option value='alava'>Álava</option>
+					<option value='albacete'>Albacete</option>
+					<option value='alicante'>Alicante/Alacant</option>
+					<option value='almeria'>Almería</option>
+					<option value='asturias'>Asturias</option>
+					<option value='avila'>Ávila</option>
+					<option value='badajoz'>Badajoz</option>
+					<option value='barcelona'>Barcelona</option>
+					<option value='burgos'>Burgos</option>
+					<option value='caceres'>Cáceres</option>
+					<option value='cadiz'>Cádiz</option>
+					<option value='cantabria'>Cantabria</option>
+					<option value='castellon'>Castellón/Castelló</option>
+					<option value='ceuta'>Ceuta</option>
+					<option value='ciudadreal'>Ciudad Real</option>
+					<option value='cordoba'>Córdoba</option>
+					<option value='cuenca'>Cuenca</option>
+					<option value='girona'>Girona</option>
+					<option value='laspalmas'>Las Palmas</option>
+					<option value='granada'>Granada</option>
+					<option value='guadalajara'>Guadalajara</option>
+					<option value='guipuzcoa'>Guipúzcoa</option>
+					<option value='huelva'>Huelva</option>
+					<option value='huesca'>Huesca</option>
+					<option value='illesbalears'>Illes Balears</option>
+					<option value='jaen'>Jaén</option>
+					<option value='acoruña'>A Coruña</option>
+					<option value='larioja'>La Rioja</option>
+					<option value='leon'>León</option>
+					<option value='lleida'>Lleida</option>
+					<option value='lugo'>Lugo</option>
+					<option value='madrid'>Madrid</option>
+					<option value='malaga'>Málaga</option>
+					<option value='melilla'>Melilla</option>
+					<option value='murcia'>Murcia</option>
+					<option value='navarra'>Navarra</option>
+					<option value='ourense'>Ourense</option>
+					<option value='palencia'>Palencia</option>
+					<option value='pontevedra'>Pontevedra</option>
+					<option value='salamanca'>Salamanca</option>
+					<option value='segovia'>Segovia</option>
+					<option value='sevilla'>Sevilla</option>
+					<option value='soria'>Soria</option>
+					<option value='tarragona'>Tarragona</option>
+					<option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+					<option value='teruel'>Teruel</option>
+					<option value='toledo'>Toledo</option>
+					<option value='valencia'>Valencia/Valéncia</option>
+					<option value='valladolid'>Valladolid</option>
+					<option value='vizcaya'>Vizcaya</option>
+					<option value='zamora'>Zamora</option>
+					<option value='zaragoza'>Zaragoza</option>
+						</select>
+					</label>
+				</p>
+			<p>
+				<label for="LblCodigoPostal">Codigo postal:</label>
+				<input type="number" name="codigopostal" id="LblCodigoPostal" >
+				</p>
+			<p>
+			<label for="LblTelefono">Teléfono:</label>
+				<input type="tel" name="telefono" id="LblTelefono">
+			</p>
+  </fieldset>
+  <fieldset>
+	<legend>Datos de la cuenta</legend>
+			<p> 
+				<label for="LblCorreo">Correo electronico:</label>
+				<input type="text" name="correo" size="40" id="LblCorreo" required placeholder="ejemplo@email.com">
+				</p>
+			<p> 
+				<label for="LblUsuario">Nombre de usuario</label>
+				<input type="text" name="usuario" size="40" id="LblUsuario" required placeholder="Usuario que se va a utilizar para conectarse">
+				</p>
+			<p> 
+				<label for="LblPassword">Contraseña:</label>
+				<input type="password" name="password" id="LblPassword" required placeholder="Introduzca tu contraseña">
+				</p>
+				
+			<p>	
+				<label for="LblPregunta1">Seleccione una pregunta secreta e ingrese una respuesta. (necesario)</label> 
+			<br /> 
+
+			<select name="pregunta" id="LblPregunta1" tabindex="8" > 
+				<option value="0">Nombre de soltera de la madre.</option> 
+				<option value="1">Nombre de la ciudad donde naciste.</option> 
+				<option value="2">Nombre de la primera mascota.</option> 
+			</select> 
+
+			<input type="text" name="pregunta" id="LblPregunta2" value="" size="60" maxlength="60" tabindex="9" placeholder="Respuesta Secreta" > 
+			<br />	
+				</p>
+				<p>
+				<label for="LblColor">Seleccione un color para tu perfil</label><br>
+				<input type="color" name="colorElegido" id="LblColor">
+				</p>
+				<p>
+				<label for="LblFoto">Seleccione una foto para tu perfil</label><br>
+				<input type="file" name="foto" id="LblFoto">
+				</p>
+	</fieldset>
+	<fieldset>
+		<legend>Otros datos</legend>
+		<p>¿Donde conociste nuesta página?</p>
+		<p>
+		<input type="checkbox" name="amigos" id="LblAmigos">
+		<label for="LblAmigos">Amigos</label>
+		
+		<input type="checkbox" name="familiares" id="LblFamiliares">
+		<label for="LblFamiliares">Familiares</label>
+		
+		<input type="checkbox" name="internet" id="LblInternet">
+		<label for="LblInternet">Internet</label>
+		
+		<input type="checkbox" name="otros" id="LblOtros">
+		<label for="LblOtros">Otros</label>
+		</p>
+				<p>
+					<label for="LblObservaciones">Observaciones:<br>
+					<textarea name="observaciones" rows="5" cols="50" id="LblObservaciones">Describe tu opinión sobre el registro</textarea>
+					</label>
+				</p>
+				<p>
+				Valora mi registro  (Malo, Regular, Bueno):
+				<input type="range" name="rango" min="1" max="3" list="lista-rango">
+				<datalist id="lista-rango">
+				  <option value="1" label="Malo">
+				  <option value="2" label="Regular">
+				  <option value="3" label="Bueno">
+				</datalist>
+				</p>
+	</fieldset>
+  <p>
+    <button type="submit">
+  <img src="images/enviar.png" alt="enviar" width="150" height="40" style="vertical-align: middle">
+</button>
+    <button type="reset">
+  <img src="images/borrar.png" alt="borrar" width="150" height="40" style="vertical-align: middle">
+  
+</button>
+  </p>
+  
+  </form>
+  </body>
+  </html>

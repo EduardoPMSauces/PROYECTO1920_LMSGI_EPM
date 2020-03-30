@@ -1,0 +1,50 @@
+
+/* 
+    Created on : 27-nov-2019, 19:10:50
+    Author     : Eduardo Jose Pereira Machado
+    Colores utilizados: https://www.w3schools.com/colors/colors_groups.asp
+*/
+
+h1{
+	color: red;
+	background-color: #FFA500;
+	margin-right:0.875 em;
+}
+h2{
+	color: crimson;
+}
+caption{
+	color: green;
+	font-style: italic;
+	font-family:sans-serif;
+    font-variant: normal;
+}
+body{
+	background-image:url(../images/Le_petit_prince.png);
+    background-repeat:no-repeat;
+    background-position: top right;
+    margin-right:25%;
+	background-size: 25%
+}
+.tabla1 td{
+    border-bottom: 1px solid #DDD;
+}
+.tabla1{
+	padding-left: 25px;
+	caption-side: bottom;
+}
+.tabla2{
+	caption-side: bottom;
+	font-family:sans-serif;
+    font-variant: normal;
+}
+.tabla2 th{
+	background-color: MediumSeaGreen;
+	color: white;
+}
+.tabla2 tr:nth-child(odd){
+	background-color:#F5F5F5;
+}
+.tabla2 tr:nth-child(even){
+	background-color:#E0FFFF;
+}

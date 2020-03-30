@@ -1,0 +1,9 @@
+p{
+	color:black;
+}
+white-space: pre; 
+
+h1::after { 
+	content: ' \A'; 
+	white-space: pre;
+}

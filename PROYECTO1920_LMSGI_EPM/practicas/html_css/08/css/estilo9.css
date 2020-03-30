@@ -1,0 +1,15 @@
+/* 
+    Created on : 
+    Author     : 
+    File        : estilo9.css
+    Description : Trabajando con selectores
+*/
+
+
+
+
+.padre ~ {border: solid 1px red;}
+
+a[title]{color:#009cde;}
+a[title='titulo hijo 1']{background-color:red;}
+a[title~'hijo']{font-size:2em;}
