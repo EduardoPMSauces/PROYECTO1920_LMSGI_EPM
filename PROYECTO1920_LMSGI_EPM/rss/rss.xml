@@ -3,11 +3,11 @@
 <rss version="2.0">
 	<channel>
 		<title>Mi canal RSS</title>
-			<link>http://192.168.5.113</link>
+			<link>http://epm.ieslossauces.es/</link>
 			<description>Noticias actuales</description>
 			<item>
 				<title>Noticias actuales</title>
-				<link>https://elpais.com/</link>
+				<link>http://epm.ieslossauces.es/</link>
 				<description>Noticias el país</description>
 				
 			</item>

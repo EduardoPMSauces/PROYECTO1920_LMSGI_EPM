@@ -60,11 +60,12 @@
 	background-color:blue;
 }
 .prat{
-	height:170px;
+	height:160px;
 	float:left;
 	margin: 20px;
 	padding: 10px;
 	border: 1px black solid;
+	
 }
 .prat img{
 	width: 200px;
@@ -85,4 +86,26 @@ body {
 #a{
 	float:right;
 	margin-top:-30px;
+}
+.content{
+	margin-left:2%;
+
+	display:inline-block;
+}
+.prat:hover {
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}
+.prat {
+	overflow:hidden;
+}
+.ver{
+	 position: absolute;
+	 top: 100%;
+	 right: 0;
+	 color: #a3a3a3;
+    font-family: seravek-web;
+    font-size: 14px;
+    line-height: 20px;
+}
 }
