@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+Autor: Eduardo Jose Pereira Machado
+Archivo: practica4.xml
+-->
+
+<actividades xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="04.xsd">	
+	<actividad nivel="infantil">
+            <codigo>A01</codigo>
+            <titulo>Al agua patos</titulo>
+            <fecha_inicio>2017-01-15</fecha_inicio>
+            <sesiones intensidad="suave"> 	
+                    <minutos_sesion>45</minutos_sesion>
+                    <sesiones_semana>3</sesiones_semana>
+            </sesiones>
+	</actividad>
+	<actividad nivel="adultos">
+            <codigo>A02</codigo>
+            <titulo>Spinning y agua</titulo>
+            <fecha_inicio>2017-01-08</fecha_inicio>
+            <sesiones intensidad="fuerte"> 			
+                    <minutos_sesion>45</minutos_sesion>
+                    <sesiones_semana>3</sesiones_semana>
+            </sesiones>
+	</actividad>
+	<actividad nivel="adultos">
+            <codigo>A03</codigo>
+            <titulo>Spinning en el agua</titulo>
+            <fecha_inicio>2017-01-15</fecha_inicio>
+            <sesiones intensidad="moderada"> 			
+                    <minutos_sesion>60</minutos_sesion>
+                    <sesiones_semana>2</sesiones_semana>
+            </sesiones>
+	</actividad>
+	<actividad nivel="infantil">
+            <codigo>A04</codigo>
+            <titulo>Socorrismo</titulo>
+            <fecha_inicio>2017-01-15</fecha_inicio>
+            <sesiones intensidad="moderada"> 			
+                    <minutos_sesion>45</minutos_sesion>
+                    <sesiones_semana>2</sesiones_semana>
+            </sesiones>
+	</actividad>
+	<actividad nivel="infantil">
+            <codigo>A05</codigo>
+            <titulo>Perfeccionamiento en el agua</titulo>
+            <fecha_inicio>2017-01-15</fecha_inicio>
+            <sesiones intensidad="moderada"> 			
+                    <minutos_sesion>45</minutos_sesion>
+                    <sesiones_semana>2</sesiones_semana>
+            </sesiones>
+	</actividad>
+	<actividad nivel="adultos">
+            <codigo>A06</codigo>
+            <titulo>Aprender a nadar</titulo>
+            <fecha_inicio>2017-02-15</fecha_inicio>
+            <sesiones intensidad="suave"> 			
+                    <minutos_sesion>30</minutos_sesion>
+                    <sesiones_semana>2</sesiones_semana>
+            </sesiones>
+	</actividad>
+</actividades>
+
+<!--
+1. Todos los elementos de las actividades infantiles.
+	/actividades/actividad[@nivel="infantil"]/*/text()
+	
+2. El nombre de las actividades para adultos.
+	/actividades/actividad[@nivel="adultos"]/titulo/text()
+	
+3. El nombre de las actividades con dos sesiones semanales.
+	/actividades/actividad[./sesiones/sesiones_semana="2"]/titulo/text()
+	//titulo[../sesiones/sesion/sesiones_semana="2"]/text()
+	//sesiones[sesiones_semana='2']/parent::node()/titulo
+	
+4. Cuenta del número de actividades.
+	count(/actividades/actividad)
+	
+5. Si queremos convertir el resultado a cadena de caracteres, podemos usar la función string().
+	string(count(/actividades/actividad))
+	
+6. Cuenta del número de actividades infantiles.
+	count(/actividades/actividad[@nivel="infantil"])
+	
+7. Suma de las sesiones semanales de las actividades para adultos.
+	sum(//sesiones[../actividad[./@nivel='adultos']]/sesiones_semana)
+	
+8. Nodos de la actividad de código A06.
+	/actividades/actividad[./codigo="A06"]/node()
+	
+-->
